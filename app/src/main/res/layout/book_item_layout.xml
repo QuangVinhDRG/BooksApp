@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ivBookImage">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRTY THIRTY"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_below="@id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author: Janet Evanovich"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvPublisher"
+            android:layout_below="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher: Atria"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_below="@+id/tvPublisher"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="serif"
+            android:justificationMode="inter_word"
+            android:text="The 30th book in the Stephanie Plum series. Plum tracks a local jeweler’s former security guard and has an overnight stakeout with relatives."/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_width="99dp"
+        android:layout_height="150dp"
+        android:src="@drawable/book_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
